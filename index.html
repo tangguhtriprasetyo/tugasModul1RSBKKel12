@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Pengenalan Javascript</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      font-family: Arial;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    input[type=text] {
+      padding: 10px;
+      font-size: 17px;
+      border: 1px solid grey;
+      float: left;
+      width: 80%;
+      background: #f1f1f1;
+    }
+
+    button {
+      float: left;
+      width: 20%;
+      padding: 10px;
+      background: #2196F3;
+      color: white;
+      font-size: 17px;
+      border: 1px solid grey;
+      border-left: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0b7dda;
+    }
+
+    form.example::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>
+    Tugas Modul 1 RSBK
+  </h2>
+
+  <h3>
+    Filter Data Mahasiswa Tekkom 17
+  </h3>
+
+  <input type="text" placeholder="Cari Data.." name="search2" id="input" style="margin:auto;max-width:300px" al>
+  <button onclick="searchData()"> <i class="fa fa-search"></i></button><br> <br> <br> <br>
+
+  <h3 id="titleHasil" style="visibility: hidden;">
+    Hasil Pencarian Data :
+  </h3>
+
+  <h4 id="hasil"></h4>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
